@@ -46,7 +46,7 @@ We welcome contributions from the community! Here's how you can get involved:
 
 ## Code of Conduct
 
-We are committed to providing a welcoming and inclusive environment for all contributors. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) when participating in our community.
+We are committed to providing a welcoming and inclusive environment for all contributors. Please read and follow our [Code of Conduct](../CODE_OF_CONDUCT.md) when participating in our community.
 
 ## License
 
