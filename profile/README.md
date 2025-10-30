@@ -55,8 +55,8 @@ Our open source projects are released under various licenses. Please check each 
 ## Connect with Us
 
 - 🌐 **Website**: [gisa.de](https://www.gisa.de)
-- 💼 **LinkedIn**: Follow us for updates on our latest projects and initiatives
-- 📧 **Contact**: For questions about our open source projects or collaboration opportunities
+- 💼 **LinkedIn**: [Follow us](https://www.linkedin.com/company/gisagmbh/) for updates on our latest projects and initiatives
+- 📧 **Email**: For questions about our open source projects or collaboration opportunities, please contact us at ctos@gisa.de
 
 ---
 
