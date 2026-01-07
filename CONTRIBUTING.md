@@ -8,6 +8,7 @@ Thank you for considering contributing to this project! We welcome all kinds of 
 4. Security Issues
 5. Responsibilities
 6. Community & Communication
+7. Licensing
 
 ## Code of Conduct
 Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a respectful and inclusive environment.
@@ -84,5 +85,8 @@ Questions? Please use Issues.
 
 <!-- provide project-specific contact information (if available) -->
 For urgent matters, please contact ctos@gisa.de.
+
+## Licensing
+By contributing to this project, you agree that your contributions will be licensed under the project's [current license](LICENSE.md) or any future license the project maintainers choose.
 
 Thank you for improving this project!
