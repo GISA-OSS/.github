@@ -24,7 +24,7 @@ Our open source engagement reflects our core competencies:
 
 We are keen to publish tools, libraries and frameworks that have been proven valuable in our work. 
 
-> ![TIP]
+> [!TIP]
 > To learn more, please check out our own [**open source projects 📖**](https://github.com/orgs/GISA-OSS/repositories).
 
 While we use open source software on a daily basis, there is always room for improvement. In the past, we have also sponsored established projects by developing new features, e.g. 
