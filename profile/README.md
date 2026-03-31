@@ -8,16 +8,11 @@ As an IT specialist, certified cloud service provider, and cloud service integra
 
 ## Our Open Source Commitment
 
-At GISA, we believe in the power of collaborative development and knowledge sharing. Through our open source initiatives, we contribute to the global technology community by:
+At GISA, we believe in the power of collaborative development and knowledge sharing. Through our open source initiatives, we contribute to the global technology community.
 
-- **Sharing Innovation**: Publishing tools, libraries, and frameworks that have proven valuable in our client work
-- **Building Community**: Fostering collaboration among developers, IT professionals, and technology enthusiasts
-- **Advancing Technology**: Contributing to cutting-edge solutions in cloud computing, automation, and enterprise IT
-- **Knowledge Transfer**: Sharing best practices and lessons learned from real-world implementations
+### Areas of Expertise
 
-## Areas of Expertise
-
-Our open source projects reflect our core competencies:
+Our open source engagement reflects our core competencies:
 
 - ☁️ **Cloud Technologies**: Hybrid and multi-cloud solutions, containerization, orchestration
 - 🔧 **Infrastructure Automation**: Infrastructure as Code, CI/CD pipelines, deployment automation
@@ -25,7 +20,30 @@ Our open source projects reflect our core competencies:
 - 🔒 **Security & Compliance**: Security frameworks, compliance tools, governance solutions
 - 🛠️ **Developer Tools**: Productivity enhancers, development frameworks, utility libraries
 
+### Our Contributions
+
+We are keen to publish tools, libraries and frameworks that have been proven valuable in our work. 
+
+> ![TIP]
+> To learn more, please check out our own [**open source projects 📖**](https://github.com/orgs/GISA-OSS/repositories).
+
+While we use open source software on a daily basis, there is always room for improvement. In the past, we have also sponsored established projects by developing new features, e.g. 
+- [Ganeti](https://github.com/ganeti/ganeti), a virtual machine cluster management tool
+- [ReaR](https://github.com/rear/rear), a solution for Linux Disaster Recovery & Bare Metal Restore ([1](https://github.com/rear/rear/pull/2937), [2](https://github.com/rear/rear/pull/2965), [3](https://github.com/rear/rear/pull/2988), [4](https://github.com/rear/rear/pull/3206)).
+
+### Building Community and Transferring Knowledge
+We are fostering collaboration among developers, IT professionals, and technology enthusiasts. Sharing best practices and lessons learned from real-world implementations helps us all.
+
+As part of that mission, we are frequently giving our own talks at various occasions, see [**🎙️gisa-oss-talks**](https://github.com/GISA-OSS/gisa-oss-talks), and also sponsoring events, like [**Chemnitzer Linux-Tage**](https://chemnitzer.linux-tage.de/) (since 2025).  
+
 ## Getting Started
+
+### For Users
+
+- Browse our repositories to find tools and solutions for your projects
+- Check out our documentation and examples
+- Report issues or request features through GitHub Issues
+- Star ⭐ repositories you find useful
 
 ### For Contributors
 
@@ -37,18 +55,11 @@ We welcome contributions from the community! Here's how you can get involved:
 4. **Engage with maintainers** through issues and discussions
 5. **Share your ideas** for new features or improvements
 
-### For Users
-
-- Browse our repositories to find tools and solutions for your projects
-- Check out our documentation and examples
-- Report issues or request features through GitHub Issues
-- Star ⭐ repositories you find useful
-
-## Code of Conduct
+### Code of Conduct
 
 We are committed to providing a welcoming and inclusive environment for all contributors. Please read and follow our [Code of Conduct](../CODE_OF_CONDUCT.md) when participating in our community.
 
-## License
+### License
 
 Our open source projects are released under various licenses. Please check each repository for specific licensing information.
 
