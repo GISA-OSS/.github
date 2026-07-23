@@ -1,0 +1,67 @@
+name: Generate Contribution Dashboard
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_diagnostics:
+        description: Run targeted contribution diagnostics using the configured secret
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: "0 3 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Create contributions GitHub App token
+        id: contributions-app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.CONTRIBUTIONS_CLIENT_ID }}
+          private-key: ${{ secrets.CONTRIBUTIONS_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          permission-members: read
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Generate anonymized SVG dashboards
+        run: python -m scripts.generate_dashboard
+        env:
+          GITHUB_TOKEN: ${{ steps.contributions-app-token.outputs.token }}
+          ORG_NAMES: gisa-oss
+          INTERNAL_ORGS: gisa-oss
+          DIAGNOSTIC_LOGIN: ${{ inputs.run_diagnostics && secrets.DASHBOARD_DIAGNOSTIC_LOGIN || '' }}
+          DIAGNOSTICS_REQUESTED: ${{ inputs.run_diagnostics || false }}
+
+      - name: Commit changed dashboard assets
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add -A assets
+
+          if git diff --cached --quiet; then
+            echo "No generated asset changes to commit."
+            echo "- Asset commit: no changes" >> "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m "Update contributions dashboard"
+            git push
+            echo "- Asset commit: generated assets committed and pushed" >> "$GITHUB_STEP_SUMMARY"
+          fi

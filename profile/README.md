@@ -31,6 +31,8 @@ While we use open source software on a daily basis, there is always room for imp
 - [Ganeti](https://github.com/ganeti/ganeti), a virtual machine cluster management tool
 - [ReaR](https://github.com/rear/rear), a solution for Linux Disaster Recovery & Bare Metal Restore ([1](https://github.com/rear/rear/pull/2937), [2](https://github.com/rear/rear/pull/2965), [3](https://github.com/rear/rear/pull/2988), [4](https://github.com/rear/rear/pull/3206)).
 
+![Contribution trend](assets/total_trend_chart.svg)
+
 ### Building Community and Transferring Knowledge
 We are fostering collaboration among developers, IT professionals, and technology enthusiasts. Sharing best practices and lessons learned from real-world implementations helps us all.
 
